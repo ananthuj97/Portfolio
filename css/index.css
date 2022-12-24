@@ -1,0 +1,149 @@
+
+body{
+    background-color: black;
+    margin: 0%;
+}
+/* **************************************   NAV   ********************************** */
+.logohead
+{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.Navig .navul
+  {
+    padding: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+  }
+  .navul
+  {
+    float: right;
+  }
+  .navli
+  {
+    color: #eee;
+    font-size: 20px;
+    list-style: none;
+    display: inline;
+    padding: 30px;
+  }
+  .navli:hover
+  {
+    color: #EE7D56;
+  }
+
+/* **************************************   Home   ********************************** */
+.home{
+    height: 100%;
+
+}
+  .title
+  {
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    padding: 0%;
+    margin: 10px;
+    display: block;
+ }
+ .title h1{
+    font-weight: 600;
+    font-size: 80PX;
+ }
+ .title h2{
+    font-weight: 300;
+    font-size: 50PX;
+ } .title h3{
+    font-weight: 300;
+    font-size: 24PX;
+ }
+.title .skillsanima .skillul .skillli
+ {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    list-style: none;
+
+}
+/* **************************************   About   ********************************** */
+.aboutme
+{
+    background-color: #101010;
+}
+
+.aboutme .content-abtme .heading
+{
+    font-family: 'Poppins', sans-serif;
+    color: #eee;
+    font-size: 50px;
+    font-weight: 400;
+    padding-top: 100px;
+    margin-left: 100px;
+    
+}
+.aboutme .content-abtme .abtme img{
+    float: right;
+    width:400px;
+    margin-left:15px;
+}
+
+.aboutme .content-abtme .abtme
+{
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 80px;
+}
+
+.aboutme  .content-abtme .HireMebtn {
+    width: 260px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EE7D56;
+    padding: 16px;
+    margin: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    transition-duration: 0.4s;
+    background-color: none; 
+    color: black ; 
+    border: 2px solid #EE7D56;
+    border-radius: 50px;
+    margin-left: 100px;
+  }
+  
+.aboutme .content-abtme .HireMebtn:hover {
+    width: 260px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .aboutme .content-abtme .Contactbtn {
+    width: 260px;
+    margin: 20px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    transition-duration: 0.4s;
+    background-color: none; 
+    color: white; 
+    border: 2px solid white;
+    border-radius: 50px;  }
+  
+.aboutme .content-abtme .Contactbtn:hover {
+    width: 260px;
+    background-color: white;
+    color: black;
+  }
+
+/* **************************************   Skills   ********************************** */
+/* **************************************   Portfolio   ********************************** */
+/* **************************************   My Journey   ********************************** */
+/* **************************************   Contact   ********************************** */
+/* **************************************   Footer   ********************************** */
