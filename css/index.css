@@ -27,6 +27,7 @@ body{
     list-style: none;
     display: inline;
     padding: 30px;
+    cursor: pointer;
   }
   .navli:hover
   {
@@ -44,8 +45,7 @@ body{
     font-family: 'Poppins', sans-serif;
     padding: 0%;
     margin: 10px;
-    display: block;
- }
+   }
  .title h1{
     font-weight: 600;
     font-size: 80PX;
@@ -63,6 +63,41 @@ body{
     font-size: 50px;
     list-style: none;
 
+}
+.home .title .resme {
+  width: 260px;
+  margin: 20px 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  background-color: none; 
+  color: white; 
+  border: 2px solid white;
+  border-radius: 50px;  
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.home .title .resme:hover span{
+  display: none;
+}
+
+.home .title .resme:hover:before {
+  content: "Download";
+}
+.home .title .resme:hover
+{
+  width: 260px;
+  background-color: white;
+  color: black;
 }
 /* **************************************   About   ********************************** */
 .aboutme
@@ -136,7 +171,8 @@ body{
     background-color: none; 
     color: white; 
     border: 2px solid white;
-    border-radius: 50px;  }
+    border-radius: 50px;  
+  }
   
 .aboutme .content-abtme .Contactbtn:hover {
     content: Get Quote;
@@ -153,6 +189,10 @@ body{
 /* **************************************   Skills   ********************************** */
 
 
+.skills .cntnr-skill {
+  margin: 50px;
+  display: inline-block;
+}
 .skills .content-skill .heading
 {
     font-family: 'Poppins', sans-serif;
@@ -773,6 +813,7 @@ body{
 .myjourney{
   height: 100%;
   width: 100%;
+  padding-bottom: 100px;
 }
 .myjourney .heading
 {
@@ -989,4 +1030,58 @@ body{
 }
 
 /* **************************************   Contact   ********************************** */
+.contactme{
+  width: 100%;
+
+}
+.contactme .cont .stitl
+{
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  font-size: 20px;
+  font-weight: 200;
+  padding-top: 100px;
+  margin-left: 100px;
+}
+.contactme .cont .mtitl
+{
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  font-size: 50px;
+  font-weight: 400;
+  margin-left: 100px;
+}
+.contactme .cont .mycnct
+{
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 100px;
+  margin-left: 100px;
+  text-align: center;
+}
+.contactme .cont .formbg
+{
+  text-align: center;
+  padding: 50px;
+}
+.contactme .social
+{
+  text-align: center;
+}
+.contactme .social img
+{
+  padding: 60px;
+}
+.contactme .social .wa:hover
+{
+  color: #26D367;
+}
 /* **************************************   Footer   ********************************** */
+footer{
+  color: white;
+  display: block;
+  text-align: center;
+  background-color: black;
+}
