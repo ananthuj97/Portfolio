@@ -36,7 +36,7 @@ body{
 /* **************************************   Home   ********************************** */
 .home{
     height: 100%;
-
+    width: 100%;
 }
   .title
   {
@@ -68,6 +68,8 @@ body{
 .aboutme
 {
     background-color: #101010;
+    height: 100%;
+    width: 100%;
 }
 
 .aboutme .content-abtme .heading
@@ -137,13 +139,854 @@ body{
     border-radius: 50px;  }
   
 .aboutme .content-abtme .Contactbtn:hover {
+    content: Get Quote;
     width: 260px;
     background-color: white;
     color: black;
   }
+  .aboutme .content-abtme .sign{
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
 
 /* **************************************   Skills   ********************************** */
+
+
+.skills .content-skill .heading
+{
+    font-family: 'Poppins', sans-serif;
+    color: #eee;
+    font-size: 50px;
+    font-weight: 400;
+    padding-top: 100px;
+    margin-left: 100px;
+    
+}
+
+.skills .content-skill .skill-cnct
+{
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 80px;
+}
+.skills .content-skill .cntnr-skill
+{
+  padding: 50px;
+  display: inline;
+}
+.skills .content-skill .cntnr-skill .skillset{
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+
+}
+.skills .content-skill .cntnr-skill .percentage{
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+.skills .content-skill .cntnr-skill .figma{
+  color: #C7441E;
+}
+.fig .container {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.fig .progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.fig .progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.skills 
+{
+  display: inline;
+}
+
+.skills .skill-cnct{
+  float: left;
+}
+.fig .progress-moved .progress-bar2 {
+  background-color: #C7441E;
+  animation: progress 2s infinite ;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+    background: #cb7d67;
+  }
+
+  100% {
+    width: 100%;
+    background: #C7441E;
+    box-shadow: 0 0 40px #C7441E;
+  }
+}
+
+
+
+.fig .loader {
+  --p: 0;
+  animation: p 2s steps(100)  infinite ;
+  counter-reset: p var(--p);
+  position: absolute;
+  bottom: 45px;
+  left: 325px;
+  color: #C7441E;
+}
+
+.fig .loader:after {
+  content: counter(p) "%";
+}
+
+@keyframes p {
+  80%,
+  100% {
+    --p: 100;
+  }
+}
+.skills .content-skill .cntnr-skill .Photoshop{
+  color: #31A8FF;
+}
+.ps .container {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.ps .progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.ps .progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.ps .progress-moved .progress-bar2 {
+  background-color: #31A8FF;
+  animation: psprogress 2s infinite ;
+}
+
+@keyframes psprogress {
+  0% {
+    width: 0%;
+    background: #7fcaff;
+  }
+
+  100% {
+    width: 100%;
+    background: #31A8FF;
+    box-shadow: 0 0 40px #31A8FF;
+  }
+}
+
+
+
+.ps .loader {
+  --p: 0;
+  animation: p 2s steps(100)  infinite ;
+  counter-reset: p var(--p);
+  position: absolute;
+  bottom: 45px;
+  left: 325px;
+  color: #31A8FF;
+}
+
+.ps .loader:after {
+  content: counter(p) "%";
+}
+
+@keyframes p {
+  80%,
+  100% {
+    --p: 100;
+  }
+}
+.skills .content-skill .cntnr-skill .Illustrator{
+  color: #FF9A00;
+}
+.ai .container {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.ai .progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.ai .progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.ai .progress-moved .progress-bar2 {
+  background-color: #FF9A00;
+  animation: aiprogress 2s infinite ;
+}
+
+@keyframes aiprogress {
+  0% {
+    width: 0%;
+    background: #ffca7b;
+  }
+
+  100% {
+    width: 100%;
+    background: #FF9A00;
+    box-shadow: 0 0 40px #FF9A00;
+  }
+}
+
+
+
+.ai .loader {
+  --p: 0;
+  animation: p 2s steps(100)  infinite ;
+  counter-reset: p var(--p);
+  position: absolute;
+  bottom: 45px;
+  left: 325px;
+  color: #FF9A00;
+}
+
+.ai .loader:after {
+  content: counter(p) "%";
+}
+
+@keyframes p {
+  80%,
+  100% {
+    --p: 100;
+  }
+}
+.skills .content-skill .cntnr-skill .Premier{
+  color: #9999FF;
+}
+.pp .container {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.pp .progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.pp .progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.pp .progress-moved .progress-bar2 {
+  background-color: #9999FF;
+  animation: ppprogress 2s infinite ;
+}
+
+@keyframes ppprogress {
+  0% {
+    width: 0%;
+    background: #bdbdf0;
+  }
+
+  100% {
+    width: 100%;
+    background: #9999FF;
+    box-shadow: 0 0 40px #9999FF;
+  }
+}
+
+
+
+.pp .loader {
+  --p: 0;
+  animation: p 2s steps(100)  infinite ;
+  counter-reset: p var(--p);
+  position: absolute;
+  bottom: 45px;
+  left: 325px;
+  color: #9999FF;
+}
+
+.pp .loader:after {
+  content: counter(p) "%";
+}
+
+@keyframes p {
+  80%,
+  100% {
+    --p: 100;
+  }
+}
+.skills .content-skill .cntnr-skill .After{
+  color: #9999FF;
+}
+.ae .container {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.ae .progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.ae .progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.ae .progress-moved .progress-bar2 {
+  background-color: #9999FF;
+  animation: aeprogress 2s infinite ;
+}
+
+@keyframes aeprogress {
+  0% {
+    width: 0%;
+    background: #a3a3d6;
+  }
+
+  100% {
+    width: 100%;
+    background: #9999FF;
+    box-shadow: 0 0 40px #9999FF;
+  }
+}
+
+
+
+.ae .loader {
+  --p: 0;
+  animation: p 2s steps(100)  infinite ;
+  counter-reset: p var(--p);
+  position: absolute;
+  bottom: 45px;
+  left: 325px;
+  color: #9999FF;
+}
+
+.ae .loader:after {
+  content: counter(p) "%";
+}
+
+@keyframes p {
+  80%,
+  100% {
+    --p: 100;
+  }
+}
+.skills .content-skill .cntnr-skill .html{
+  color: #2965F1;
+}
+.html .container {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.html .progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.html .progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.html .progress-moved .progress-bar2 {
+  background-color: #2965F1;
+  animation: htmlprogress 2s infinite ;
+}
+
+@keyframes htmlprogress {
+  0% {
+    width: 0%;
+    background: #789aea;
+  }
+
+  100% {
+    width: 100%;
+    background: #2965F1;
+    box-shadow: 0 0 40px #2965F1;
+  }
+}
+
+
+
+.html .loader {
+  --p: 0;
+  animation: p 2s steps(100)  infinite ;
+  counter-reset: p var(--p);
+  position: absolute;
+  bottom: 45px;
+  left: 325px;
+  color: #2965F1;
+}
+
+.html .loader:after {
+  content: counter(p) "%";
+}
+
+@keyframes p {
+  80%,
+  100% {
+    --p: 100;
+  }
+}
+.skills .content-skill .cntnr-skill .css{
+  color: #C7441E;
+}
+.css .container {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  width: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.css .progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.css .progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.css .progress-moved .progress-bar2 {
+  background-color: #C7441E;
+  animation: cssprogress 2s infinite ;
+}
+
+@keyframes cssprogress {
+  0% {
+    width: 0%;
+    background: #cb7d67;
+  }
+
+  100% {
+    width: 100%;
+    background: #C7441E;
+    box-shadow: 0 0 40px #C7441E;
+  }
+}
+
+
+
+.css .loader {
+  --p: 0;
+  animation: p 2s steps(100)  infinite ;
+  counter-reset: p var(--p);
+  position: absolute;
+  bottom: 45px;
+  left: 325px;
+  color: #C7441E;
+}
+
+.css .loader:after {
+  content: counter(p) "%";
+}
+
+@keyframes p {
+  80%,
+  100% {
+    --p: 100;
+  }
+}
 /* **************************************   Portfolio   ********************************** */
+.portfolio{
+  height: 100%;
+  width: 100%;
+  background-color: #101010;
+}
+.portfolio .content-prtfolio .heading
+{
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  font-size: 50px;
+  font-weight: 400;
+  padding-top: 100px;
+  margin-left: 100px;
+}
+.portfolio .PG {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.portfolio .pgtxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio .pgtxt .titl
+{
+  font-family: 'Poppins', sans-serif;
+  color: #F6C668;
+  font-size: 26px;
+  font-weight: 300;
+}
+/* ________________________________________________ */
+.portfolio .UX {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.portfolio .uxtxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio .uxtxt .titl
+{
+  font-family: 'Poppins', sans-serif;
+  color: #F6C668;
+  font-size: 26px;
+  font-weight: 300;
+}
+/* ________________________________________________ */
+.portfolio .MG {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.portfolio .mgtxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio .mgtxt .titl
+{
+  font-family: 'Poppins', sans-serif;
+  color: #5AC5D7;
+  font-size: 26px;
+  font-weight: 300;
+}
+/* ________________________________________________ */
+.portfolio .VE {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.portfolio .vetxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.portfolio .vetxt .titl
+{
+  font-family: 'Poppins', sans-serif;
+  color: #EE7D56;
+  font-size: 26px;
+  font-weight: 300;
+}
+.portfolio .explore {
+  width: 200px;
+  margin: 20px 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #181818;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  background-color: none; 
+  color: white; 
+  border: 2px solid white;
+  border-radius: 50px;  }
+  .portfolio .explore:hover
+  {
+    background-color: rgb(255, 255, 255);
+    color: #181818;   
+  }
+  .portfolio p
+  {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .portfolio .uxtxt .titl
+{
+  font-family: 'Poppins', sans-serif;
+  color: #EC5E7F;
+  font-size: 26px;
+  font-weight: 300;
+}
 /* **************************************   My Journey   ********************************** */
+.myjourney{
+  height: 100%;
+  width: 100%;
+}
+.myjourney .heading
+{
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  font-size: 50px;
+  font-weight: 400;
+  padding-top: 100px;
+  margin-left: 100px;
+}
+/* ___________________________Leanpitch___________________________ */
+.myjourney .mg {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.myjourney .mg .date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myjourney .mg .date .year{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+.myjourney .mg .date .mnth{
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+  font-size: 20px;
+}
+.myjourney .mg-des {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.myjourney .mg-des .des {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myjourney .mg-des .des .job{
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: white;
+}
+.myjourney .mg-des .des .job a{
+  color: #FF436E;
+}
+.myjourney .mg-des .des .cmpny{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #FF436E;
+}
+.myjourney .mg-des .des .jdes{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: white;
+}
+/* ___________________________ASTI___________________________ */
+.myjourney .dm {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.myjourney .dm .date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myjourney .dm .date .year{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+.myjourney .dm .date .mnth{
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+  font-size: 20px;
+}
+.myjourney .dm-des {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.myjourney .dm-des .des {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myjourney .dm-des .des .job{
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: white;
+}
+.myjourney .dm-des .des .job a{
+  color: #F6C668;
+}
+.myjourney .dm-des .des .cmpny{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #F6C668;
+}
+.myjourney .dm-des .des .jdes{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: white;
+}
+/* ___________________________ Yugti ___________________________ */
+.myjourney .ux {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.myjourney .ux .date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myjourney .ux .date .year{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+.myjourney .ux .date .mnth{
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+  font-size: 20px;
+}
+.myjourney .ux-des {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.myjourney .ux-des .des {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myjourney .ux-des .des .job{
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: white;
+}
+.myjourney .ux-des .des .job a{
+  color: #EE7D56;
+}
+.myjourney .ux-des .des .cmpny{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #EE7D56;
+}
+.myjourney .ux-des .des .jdes{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: white;
+}
+/* ___________________________ Photography ___________________________ */
+.myjourney .pg {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.myjourney .pg .date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myjourney .pg .date .year{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+.myjourney .pg .date .mnth{
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+  font-size: 20px;
+}
+.myjourney .pg-des {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.myjourney .pg-des .des {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myjourney .pg-des .des .job{
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: white;
+}
+.myjourney .pg-des .des .job a{
+  color: #5AC5D7;
+}
+.myjourney .pg-des .des .cmpny{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #5AC5D7;
+}
+.myjourney .pg-des .des .jdes{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
 /* **************************************   Contact   ********************************** */
 /* **************************************   Footer   ********************************** */
