@@ -6,12 +6,12 @@ body{
 /* **************************************   NAV   ********************************** */
 .logohead
 {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 .Navig .navul
   {
-    padding: 10px;
+    padding: 30px;
     margin-right: 20px;
     display: inline-block;
     font-family: 'Poppins', sans-serif;
@@ -1090,9 +1090,42 @@ body{
 {
   padding: 60px;
 }
-.contactme .social .wa:hover
+.contactme .social  .fa
+{
+ color: #C9C9C9;
+ stroke: #C9C9C9 3px;
+transform: scale(3);
+text-decoration: none;
+margin: 60px;
+}
+
+/* .contactme .social  .fa-whatsapp
+{
+  color: #C9C9C9;
+} */
+.contactme .social  .fa-whatsapp:hover
 {
   color: #26D367;
+}
+.contactme .social  .fa-facebook:hover
+{
+  color: #006EE9;
+}
+.contactme .social  .fa-instagram:hover
+{
+  color: #fa7e1e;
+}
+.contactme .social  .fa-linkedin:hover
+{
+  color: #007AB6;
+}
+.contactme .social  .fa-behance:hover
+{
+  color: white;
+}
+.contactme .social  .fa-youtube:hover
+{
+  color: #d90700;
 }
 /* **************************************   Footer   ********************************** */
 footer{
@@ -1100,4 +1133,5 @@ footer{
   display: block;
   text-align: center;
   background-color: black;
+  font-family: 'Poppins', sans-serif;
 }
