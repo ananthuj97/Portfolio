@@ -826,6 +826,8 @@ body{
 }
 /* ___________________________Leanpitch___________________________ */
 .myjourney .mg {
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
   text-align: center;
   color: white;
@@ -850,6 +852,8 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .myjourney .mg-des .des {
   position: absolute;
@@ -877,6 +881,8 @@ body{
 }
 /* ___________________________ASTI___________________________ */
 .myjourney .dm {
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
   text-align: center;
   color: white;
@@ -901,6 +907,8 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .myjourney .dm-des .des {
   position: absolute;
@@ -931,6 +939,8 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .myjourney .ux .date {
   position: absolute;
@@ -952,6 +962,8 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .myjourney .ux-des .des {
   position: absolute;
@@ -982,6 +994,8 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .myjourney .pg .date {
   position: absolute;
@@ -1003,6 +1017,8 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .myjourney .pg-des .des {
   position: absolute;
