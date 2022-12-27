@@ -20,11 +20,16 @@ body{
   {
     float: right;
   }
+  .navigation a{
+    list-style: none;
+    text-decoration: none;
+  }
   .navli
   {
     color: #eee;
     font-size: 20px;
     list-style: none;
+    text-decoration: none;
     display: inline;
     padding: 30px;
     cursor: pointer;
@@ -1135,3 +1140,7 @@ footer{
   background-color: black;
   font-family: 'Poppins', sans-serif;
 }
+
+
+
+
