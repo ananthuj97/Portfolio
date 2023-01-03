@@ -1,77 +1,142 @@
+body {
+  background-color: black;
+  margin: 0%;
+  height: 95%;
+  width: 95%;
+  margin: 0 2.5% 0 2.5%;
+}
 
-body{
-    background-color: black;
-    margin: 0%;
-}
 /* **************************************   NAV   ********************************** */
-.logohead
-{
-    margin-top: 30px;
-    margin-left: 30px;
+.Navigation {
+  position: relative;
+  z-index: 10;
 }
-.Navig .navul
-  {
-    padding: 30px;
-    margin-right: 20px;
-    display: inline-block;
-    font-family: 'Poppins', sans-serif;
-  }
-  .navul
-  {
+.logohead {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.Navig .navul {
+  padding: 30px;
+  margin-right: 20px;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navul {
+  float: right;
+}
+
+.navigation a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navli {
+  color: #eee;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.navli:hover {
+  color: #EE7D56;
+}
+
+.Navig .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .Navig a:not(:first-child) {display: none;}
+  .Navig a.icon {
     float: right;
+    display: block;
   }
-  .navigation a{
-    list-style: none;
-    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .Navig {position: relative;}
+  .Navig.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  .navli
-  {
-    color: #eee;
-    font-size: 20px;
-    list-style: none;
-    text-decoration: none;
-    display: inline;
-    padding: 30px;
-    cursor: pointer;
+  .Navig.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
-  .navli:hover
-  {
-    color: #EE7D56;
-  }
+}
+
 
 /* **************************************   Home   ********************************** */
-.home{
-    height: 100%;
-    width: 100%;
+.home {
+  height: 100%;
+  width: 100%;
 }
-  .title
-  {
-    color: #eee;
-    font-family: 'Poppins', sans-serif;
-    padding: 0%;
-    margin: 10px;
-   }
- .title h1{
-    font-weight: 600;
-    font-size: 80PX;
- }
- .title h2{
-    font-weight: 300;
-    font-size: 50PX;
- } .title h3{
-    font-weight: 300;
-    font-size: 24PX;
- }
-.title .skillsanima .skillul .skillli
- {
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    list-style: none;
+
+.title {
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+  padding: 0%;
+  position: relative;
+}
+
+.title img {
+  height: 100vh;
+  margin: -15vh 0 0 2vw;
+}
+
+.title .title-text {
+  position: absolute;
+  top: 20vh;
+  left: 45vw;
+}
+
+.title h1 {
+  font-weight: 600;
+  /* width: 30vw; */
+  margin: 0px;
+  font-size: 6vh;
+}
+
+.title h2 {
+  font-weight: 300;
+  font-size: 50PX;
+  margin: 0px;
+  width: 15vw;
+}
+
+.title h3 {
+  font-weight: 300;
+  font-size: 15PX;
+  margin: 0px;
+}
+
+.title .skillsanima {
+  display: flex;
+  width: 60vw;
+}
+
+.title .skillsanima .skillul {
+  padding: 0px;
+}
+
+.title .skillsanima .skillul .skillli {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  list-style: none;
+  display: flex;
 
 }
+
 .home .title .resme {
-  width: 260px;
-  margin: 20px 20px;
+  width: 20vw;
+  min-width: fit-content;
   font-family: 'Poppins', sans-serif;
   background-color: black;
   padding: 16px;
@@ -79,116 +144,124 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 26px;
-  background-color: none; 
-  color: white; 
+  background-color: none;
+  color: white;
   border: 2px solid white;
-  border-radius: 50px;  
+  border-radius: 50px;
 }
+
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }
-.home .title .resme:hover span{
+
+.home .title .resme {
+  position: absolute;
+  top: 45vh;
+}
+
+.home .title .resme:hover span {
   display: none;
 }
 
 .home .title .resme:hover:before {
   content: "Download";
 }
-.home .title .resme:hover
-{
+
+.home .title .resme:hover {
+  width: 260px;
+  background-color: orange;
+  color: white;
+}
+
+marquee {
+  display: inline-block;
+  animation: marquee 5s linear infinite;
+  animation-play-state: running;
+  height: 50px;
+}
+
+/* **************************************   About   ********************************** */
+.aboutme {
+  background-color: #101010;
+  height: 100%;
+  width: 100%;
+}
+
+.aboutme .content-abtme .heading {
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.aboutme .content-abtme .abtme img {
+  float: right;
+  width: 400px;
+  margin-left: 15px;
+}
+
+.aboutme .content-abtme .abtme {
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.aboutme .content-abtme .HireMebtn {
+  width: fit-content;
+  font-family: 'Poppins', sans-serif;
+  background-color: #EE7D56;
+  padding: 16px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  transition-duration: 0.4s;
+  background-color: none;
+  color: black;
+  border: 2px solid #EE7D56;
+  border-radius: 50px;
+}
+
+.aboutme .content-abtme .HireMebtn:hover {
+  width: 260px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.aboutme .content-abtme .Contactbtn {
+  width: fit-content;
+  margin: 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  transition-duration: 0.4s;
+  background-color: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.aboutme .content-abtme .Contactbtn:hover {
+  content: Get Quote;
   width: 260px;
   background-color: white;
   color: black;
 }
-/* **************************************   About   ********************************** */
-.aboutme
-{
-    background-color: #101010;
-    height: 100%;
-    width: 100%;
-}
 
-.aboutme .content-abtme .heading
-{
-    font-family: 'Poppins', sans-serif;
-    color: #eee;
-    font-size: 50px;
-    font-weight: 400;
-    padding-top: 100px;
-    margin-left: 100px;
-    
+.aboutme .content-abtme .sign {
+  margin-top: 100px;
 }
-.aboutme .content-abtme .abtme img{
-    float: right;
-    width:400px;
-    margin-left:15px;
-}
-
-.aboutme .content-abtme .abtme
-{
-    color: #eee;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 80px;
-}
-
-.aboutme  .content-abtme .HireMebtn {
-    width: 260px;
-    font-family: 'Poppins', sans-serif;
-    background-color: #EE7D56;
-    padding: 16px;
-    margin: 20px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 26px;
-    transition-duration: 0.4s;
-    background-color: none; 
-    color: black ; 
-    border: 2px solid #EE7D56;
-    border-radius: 50px;
-    margin-left: 100px;
-  }
-  
-.aboutme .content-abtme .HireMebtn:hover {
-    width: 260px;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-  }
-
-  .aboutme .content-abtme .Contactbtn {
-    width: 260px;
-    margin: 20px 20px;
-    font-family: 'Poppins', sans-serif;
-    background-color: black;
-    padding: 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 26px;
-    transition-duration: 0.4s;
-    background-color: none; 
-    color: white; 
-    border: 2px solid white;
-    border-radius: 50px;  
-  }
-  
-.aboutme .content-abtme .Contactbtn:hover {
-    content: Get Quote;
-    width: 260px;
-    background-color: white;
-    color: black;
-  }
-  .aboutme .content-abtme .sign{
-    margin-left: 100px;
-    margin-top: 100px;
-  }
 
 
 /* **************************************   Skills   ********************************** */
@@ -198,51 +271,50 @@ body{
   margin: 50px;
   display: inline-block;
 }
-.skills .content-skill .heading
-{
-    font-family: 'Poppins', sans-serif;
-    color: #eee;
-    font-size: 50px;
-    font-weight: 400;
-    padding-top: 100px;
-    margin-left: 100px;
-    
+
+.skills .content-skill .heading {
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  font-size: 50px;
+  font-weight: 400;
+
 }
 
-.skills .content-skill .skill-cnct
-{
-    color: #eee;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 80px;
+.skills .content-skill .skill-cnct {
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
 }
-.skills .content-skill .cntnr-skill
-{
-  padding: 50px;
+
+.skills .content-skill .cntnr-skill {
   display: inline;
 }
-.skills .content-skill .cntnr-skill .skillset{
+
+.skills .content-skill .cntnr-skill .skillset {
   color: #eee;
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 300;
 
 }
-.skills .content-skill .cntnr-skill .percentage{
+
+.skills .content-skill .cntnr-skill .percentage {
   color: #eee;
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 300;
 }
-.skills .content-skill .cntnr-skill .figma{
+
+.skills .content-skill .cntnr-skill .figma {
   color: #C7441E;
 }
+
 .fig .container {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 800px;
+  width: 70%;
   text-align: center;
   position: relative;
 }
@@ -259,17 +331,17 @@ body{
   transition-property: width, background-color;
 }
 
-.skills 
-{
+.skills {
   display: inline;
 }
 
-.skills .skill-cnct{
+.skills .skill-cnct {
   float: left;
 }
+
 .fig .progress-moved .progress-bar2 {
   background-color: #C7441E;
-  animation: progress 2s infinite ;
+  animation: progress 2s infinite;
 }
 
 @keyframes progress {
@@ -289,11 +361,11 @@ body{
 
 .fig .loader {
   --p: 0;
-  animation: p 2s steps(100)  infinite ;
+  animation: p 2s steps(100) infinite;
   counter-reset: p var(--p);
   position: absolute;
   bottom: 45px;
-  left: 325px;
+  left: 280px;
   color: #C7441E;
 }
 
@@ -302,19 +374,22 @@ body{
 }
 
 @keyframes p {
+
   80%,
   100% {
     --p: 100;
   }
 }
-.skills .content-skill .cntnr-skill .Photoshop{
+
+.skills .content-skill .cntnr-skill .Photoshop {
   color: #31A8FF;
 }
+
 .ps .container {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 800px;
+  width: 70%;
   text-align: center;
   position: relative;
 }
@@ -333,7 +408,7 @@ body{
 
 .ps .progress-moved .progress-bar2 {
   background-color: #31A8FF;
-  animation: psprogress 2s infinite ;
+  animation: psprogress 2s infinite;
 }
 
 @keyframes psprogress {
@@ -353,11 +428,11 @@ body{
 
 .ps .loader {
   --p: 0;
-  animation: p 2s steps(100)  infinite ;
+  animation: p 2s steps(100) infinite;
   counter-reset: p var(--p);
   position: absolute;
   bottom: 45px;
-  left: 325px;
+  left: 280px;
   color: #31A8FF;
 }
 
@@ -366,19 +441,22 @@ body{
 }
 
 @keyframes p {
+
   80%,
   100% {
     --p: 100;
   }
 }
-.skills .content-skill .cntnr-skill .Illustrator{
+
+.skills .content-skill .cntnr-skill .Illustrator {
   color: #FF9A00;
 }
+
 .ai .container {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 800px;
+  width: 70%;
   text-align: center;
   position: relative;
 }
@@ -397,7 +475,7 @@ body{
 
 .ai .progress-moved .progress-bar2 {
   background-color: #FF9A00;
-  animation: aiprogress 2s infinite ;
+  animation: aiprogress 2s infinite;
 }
 
 @keyframes aiprogress {
@@ -417,11 +495,11 @@ body{
 
 .ai .loader {
   --p: 0;
-  animation: p 2s steps(100)  infinite ;
+  animation: p 2s steps(100) infinite;
   counter-reset: p var(--p);
   position: absolute;
   bottom: 45px;
-  left: 325px;
+  left: 280px;
   color: #FF9A00;
 }
 
@@ -430,19 +508,22 @@ body{
 }
 
 @keyframes p {
+
   80%,
   100% {
     --p: 100;
   }
 }
-.skills .content-skill .cntnr-skill .Premier{
+
+.skills .content-skill .cntnr-skill .Premier {
   color: #9999FF;
 }
+
 .pp .container {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 800px;
+  width: 70%;
   text-align: center;
   position: relative;
 }
@@ -461,7 +542,7 @@ body{
 
 .pp .progress-moved .progress-bar2 {
   background-color: #9999FF;
-  animation: ppprogress 2s infinite ;
+  animation: ppprogress 2s infinite;
 }
 
 @keyframes ppprogress {
@@ -481,11 +562,11 @@ body{
 
 .pp .loader {
   --p: 0;
-  animation: p 2s steps(100)  infinite ;
+  animation: p 2s steps(100) infinite;
   counter-reset: p var(--p);
   position: absolute;
   bottom: 45px;
-  left: 325px;
+  left: 280px;
   color: #9999FF;
 }
 
@@ -494,19 +575,22 @@ body{
 }
 
 @keyframes p {
+
   80%,
   100% {
     --p: 100;
   }
 }
-.skills .content-skill .cntnr-skill .After{
+
+.skills .content-skill .cntnr-skill .After {
   color: #9999FF;
 }
+
 .ae .container {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 800px;
+  width: 70%;
   text-align: center;
   position: relative;
 }
@@ -525,7 +609,7 @@ body{
 
 .ae .progress-moved .progress-bar2 {
   background-color: #9999FF;
-  animation: aeprogress 2s infinite ;
+  animation: aeprogress 2s infinite;
 }
 
 @keyframes aeprogress {
@@ -545,11 +629,11 @@ body{
 
 .ae .loader {
   --p: 0;
-  animation: p 2s steps(100)  infinite ;
+  animation: p 2s steps(100) infinite;
   counter-reset: p var(--p);
   position: absolute;
   bottom: 45px;
-  left: 325px;
+  left: 280px;
   color: #9999FF;
 }
 
@@ -558,19 +642,22 @@ body{
 }
 
 @keyframes p {
+
   80%,
   100% {
     --p: 100;
   }
 }
-.skills .content-skill .cntnr-skill .html{
+
+.skills .content-skill .cntnr-skill .html {
   color: #2965F1;
 }
+
 .html .container {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 800px;
+  width: 70%;
   text-align: center;
   position: relative;
 }
@@ -589,7 +676,7 @@ body{
 
 .html .progress-moved .progress-bar2 {
   background-color: #2965F1;
-  animation: htmlprogress 2s infinite ;
+  animation: htmlprogress 2s infinite;
 }
 
 @keyframes htmlprogress {
@@ -609,11 +696,11 @@ body{
 
 .html .loader {
   --p: 0;
-  animation: p 2s steps(100)  infinite ;
+  animation: p 2s steps(100) infinite;
   counter-reset: p var(--p);
   position: absolute;
   bottom: 45px;
-  left: 325px;
+  left: 280px;
   color: #2965F1;
 }
 
@@ -622,19 +709,22 @@ body{
 }
 
 @keyframes p {
+
   80%,
   100% {
     --p: 100;
   }
 }
-.skills .content-skill .cntnr-skill .css{
+
+.skills .content-skill .cntnr-skill .css {
   color: #C7441E;
 }
+
 .css .container {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 800px;
+  width: 70%;
   text-align: center;
   position: relative;
 }
@@ -653,7 +743,7 @@ body{
 
 .css .progress-moved .progress-bar2 {
   background-color: #C7441E;
-  animation: cssprogress 2s infinite ;
+  animation: cssprogress 2s infinite;
 }
 
 @keyframes cssprogress {
@@ -673,11 +763,11 @@ body{
 
 .css .loader {
   --p: 0;
-  animation: p 2s steps(100)  infinite ;
+  animation: p 2s steps(100) infinite;
   counter-reset: p var(--p);
   position: absolute;
   bottom: 45px;
-  left: 325px;
+  left: 280px;
   color: #C7441E;
 }
 
@@ -686,19 +776,21 @@ body{
 }
 
 @keyframes p {
+
   80%,
   100% {
     --p: 100;
   }
 }
+
 /* **************************************   Portfolio   ********************************** */
-.portfolio{
+.portfolio {
   height: 100%;
   width: 100%;
   background-color: #101010;
 }
-.portfolio .content-prtfolio .heading
-{
+
+.portfolio .content-prtfolio .heading {
   font-family: 'Poppins', sans-serif;
   color: #eee;
   font-size: 50px;
@@ -706,81 +798,90 @@ body{
   padding-top: 100px;
   margin-left: 100px;
 }
+
 .portfolio .PG {
   position: relative;
   text-align: center;
   color: white;
 }
+
 .portfolio .pgtxt {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.portfolio .pgtxt .titl
-{
+
+.portfolio .pgtxt .titl {
   font-family: 'Poppins', sans-serif;
   color: #F6C668;
   font-size: 26px;
   font-weight: 300;
 }
+
 /* ________________________________________________ */
 .portfolio .UX {
   position: relative;
   text-align: center;
   color: white;
 }
+
 .portfolio .uxtxt {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.portfolio .uxtxt .titl
-{
+
+.portfolio .uxtxt .titl {
   font-family: 'Poppins', sans-serif;
   color: #F6C668;
   font-size: 26px;
   font-weight: 300;
 }
+
 /* ________________________________________________ */
 .portfolio .MG {
   position: relative;
   text-align: center;
   color: white;
 }
+
 .portfolio .mgtxt {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.portfolio .mgtxt .titl
-{
+
+.portfolio .mgtxt .titl {
   font-family: 'Poppins', sans-serif;
   color: #5AC5D7;
   font-size: 26px;
   font-weight: 300;
 }
+
 /* ________________________________________________ */
 .portfolio .VE {
   position: relative;
   text-align: center;
   color: white;
 }
+
 .portfolio .vetxt {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.portfolio .vetxt .titl
-{
+
+.portfolio .vetxt .titl {
   font-family: 'Poppins', sans-serif;
   color: #EE7D56;
   font-size: 26px;
   font-weight: 300;
 }
+
 .portfolio .explore {
   width: 200px;
   margin: 20px 20px;
@@ -792,36 +893,38 @@ body{
   display: inline-block;
   font-size: 20px;
   transition-duration: 0.4s;
-  background-color: none; 
-  color: white; 
+  background-color: none;
+  color: white;
   border: 2px solid white;
-  border-radius: 50px;  }
-  .portfolio .explore:hover
-  {
-    background-color: rgb(255, 255, 255);
-    color: #181818;   
-  }
-  .portfolio p
-  {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-  }
-  .portfolio .uxtxt .titl
-{
+  border-radius: 50px;
+}
+
+.portfolio .explore:hover {
+  background-color: rgb(255, 255, 255);
+  color: #181818;
+}
+
+.portfolio p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.portfolio .uxtxt .titl {
   font-family: 'Poppins', sans-serif;
   color: #EC5E7F;
   font-size: 26px;
   font-weight: 300;
 }
+
 /* **************************************   My Journey   ********************************** */
-.myjourney{
+.myjourney {
   height: 100%;
   width: 100%;
   padding-bottom: 100px;
 }
-.myjourney .heading
-{
+
+.myjourney .heading {
   font-family: 'Poppins', sans-serif;
   color: #eee;
   font-size: 50px;
@@ -829,6 +932,7 @@ body{
   padding-top: 100px;
   margin-left: 100px;
 }
+
 /* ___________________________Leanpitch___________________________ */
 .myjourney .mg {
   padding-top: 10px;
@@ -837,22 +941,26 @@ body{
   text-align: center;
   color: white;
 }
+
 .myjourney .mg .date {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.myjourney .mg .date .year{
+
+.myjourney .mg .date .year {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
   font-size: 50px;
 }
-.myjourney .mg .date .mnth{
+
+.myjourney .mg .date .mnth {
   font-family: 'Comfortaa', cursive;
   font-weight: 500;
   font-size: 20px;
 }
+
 .myjourney .mg-des {
   position: relative;
   text-align: center;
@@ -860,30 +968,36 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .myjourney .mg-des .des {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.myjourney .mg-des .des .job{
+
+.myjourney .mg-des .des .job {
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
   color: white;
 }
-.myjourney .mg-des .des .job a{
+
+.myjourney .mg-des .des .job a {
   color: #FF436E;
 }
-.myjourney .mg-des .des .cmpny{
+
+.myjourney .mg-des .des .cmpny {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   color: #FF436E;
 }
-.myjourney .mg-des .des .jdes{
+
+.myjourney .mg-des .des .jdes {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   color: white;
 }
+
 /* ___________________________ASTI___________________________ */
 .myjourney .dm {
   padding-top: 10px;
@@ -892,22 +1006,26 @@ body{
   text-align: center;
   color: white;
 }
+
 .myjourney .dm .date {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.myjourney .dm .date .year{
+
+.myjourney .dm .date .year {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
   font-size: 50px;
 }
-.myjourney .dm .date .mnth{
+
+.myjourney .dm .date .mnth {
   font-family: 'Comfortaa', cursive;
   font-weight: 500;
   font-size: 20px;
 }
+
 .myjourney .dm-des {
   position: relative;
   text-align: center;
@@ -915,30 +1033,36 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .myjourney .dm-des .des {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.myjourney .dm-des .des .job{
+
+.myjourney .dm-des .des .job {
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
   color: white;
 }
-.myjourney .dm-des .des .job a{
+
+.myjourney .dm-des .des .job a {
   color: #F6C668;
 }
-.myjourney .dm-des .des .cmpny{
+
+.myjourney .dm-des .des .cmpny {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   color: #F6C668;
 }
-.myjourney .dm-des .des .jdes{
+
+.myjourney .dm-des .des .jdes {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   color: white;
 }
+
 /* ___________________________ Yugti ___________________________ */
 .myjourney .ux {
   position: relative;
@@ -947,22 +1071,26 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .myjourney .ux .date {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.myjourney .ux .date .year{
+
+.myjourney .ux .date .year {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
   font-size: 50px;
 }
-.myjourney .ux .date .mnth{
+
+.myjourney .ux .date .mnth {
   font-family: 'Comfortaa', cursive;
   font-weight: 500;
   font-size: 20px;
 }
+
 .myjourney .ux-des {
   position: relative;
   text-align: center;
@@ -970,30 +1098,36 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .myjourney .ux-des .des {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.myjourney .ux-des .des .job{
+
+.myjourney .ux-des .des .job {
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
   color: white;
 }
-.myjourney .ux-des .des .job a{
+
+.myjourney .ux-des .des .job a {
   color: #EE7D56;
 }
-.myjourney .ux-des .des .cmpny{
+
+.myjourney .ux-des .des .cmpny {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   color: #EE7D56;
 }
-.myjourney .ux-des .des .jdes{
+
+.myjourney .ux-des .des .jdes {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   color: white;
 }
+
 /* ___________________________ Photography ___________________________ */
 .myjourney .pg {
   position: relative;
@@ -1002,22 +1136,26 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .myjourney .pg .date {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.myjourney .pg .date .year{
+
+.myjourney .pg .date .year {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
   font-size: 50px;
 }
-.myjourney .pg .date .mnth{
+
+.myjourney .pg .date .mnth {
   font-family: 'Comfortaa', cursive;
   font-weight: 500;
   font-size: 20px;
 }
+
 .myjourney .pg-des {
   position: relative;
   text-align: center;
@@ -1025,38 +1163,43 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .myjourney .pg-des .des {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.myjourney .pg-des .des .job{
+
+.myjourney .pg-des .des .job {
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
   color: white;
 }
-.myjourney .pg-des .des .job a{
+
+.myjourney .pg-des .des .job a {
   color: #5AC5D7;
 }
-.myjourney .pg-des .des .cmpny{
+
+.myjourney .pg-des .des .cmpny {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   color: #5AC5D7;
 }
-.myjourney .pg-des .des .jdes{
+
+.myjourney .pg-des .des .jdes {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   color: white;
 }
 
 /* **************************************   Contact   ********************************** */
-.contactme{
+.contactme {
   width: 100%;
 
 }
-.contactme .cont .stitl
-{
+
+.contactme .cont .stitl {
   font-family: 'Poppins', sans-serif;
   color: #eee;
   font-size: 20px;
@@ -1064,16 +1207,16 @@ body{
   padding-top: 100px;
   margin-left: 100px;
 }
-.contactme .cont .mtitl
-{
+
+.contactme .cont .mtitl {
   font-family: 'Poppins', sans-serif;
   color: #eee;
   font-size: 50px;
   font-weight: 400;
   margin-left: 100px;
 }
-.contactme .cont .mycnct
-{
+
+.contactme .cont .mycnct {
   font-family: 'Poppins', sans-serif;
   color: #eee;
   font-size: 30px;
@@ -1082,65 +1225,61 @@ body{
   margin-left: 100px;
   text-align: center;
 }
-.contactme .cont .formbg
-{
+
+.contactme .cont .formbg {
   text-align: center;
   padding: 50px;
 }
-.contactme .social
-{
+
+.contactme .social {
   text-align: center;
 }
-.contactme .social img
-{
+
+.contactme .social img {
   padding: 60px;
 }
-.contactme .social  .fa
-{
- color: #C9C9C9;
- stroke: #C9C9C9 3px;
-transform: scale(3);
-text-decoration: none;
-margin: 60px;
+
+.contactme .social .fa {
+  color: #C9C9C9;
+  stroke: #C9C9C9 3px;
+  transform: scale(3);
+  text-decoration: none;
+  margin: 60px;
 }
 
 /* .contactme .social  .fa-whatsapp
 {
   color: #C9C9C9;
 } */
-.contactme .social  .fa-whatsapp:hover
-{
+.contactme .social .fa-whatsapp:hover {
   color: #26D367;
 }
-.contactme .social  .fa-facebook:hover
-{
+
+.contactme .social .fa-facebook:hover {
   color: #006EE9;
 }
-.contactme .social  .fa-instagram:hover
-{
+
+.contactme .social .fa-instagram:hover {
   color: #fa7e1e;
 }
-.contactme .social  .fa-linkedin:hover
-{
+
+.contactme .social .fa-linkedin:hover {
   color: #007AB6;
 }
-.contactme .social  .fa-behance:hover
-{
+
+.contactme .social .fa-behance:hover {
   color: white;
 }
-.contactme .social  .fa-youtube:hover
-{
+
+.contactme .social .fa-youtube:hover {
   color: #d90700;
 }
+
 /* **************************************   Footer   ********************************** */
-footer{
+footer {
   color: white;
   display: block;
   text-align: center;
   background-color: black;
   font-family: 'Poppins', sans-serif;
 }
-
-
-
-
