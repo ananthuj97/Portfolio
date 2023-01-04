@@ -2,7 +2,7 @@ body {
   background-color: black;
   margin: 0%;
   height: 95%;
-  width: 95%;
+  max-width: 95%;
   margin: 0 2.5% 0 2.5%;
 }
 
@@ -87,7 +87,8 @@ body {
 }
 
 .title img {
-  height: 100vh;
+  height: 95vh;
+  max-width: 95vw;
   margin: -15vh 0 0 2vw;
 }
 
@@ -135,11 +136,10 @@ body {
 }
 
 .home .title .resme {
-  width: 20vw;
   min-width: fit-content;
   font-family: 'Poppins', sans-serif;
   background-color: black;
-  padding: 16px;
+  padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -156,11 +156,6 @@ body {
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
-}
-
-.home .title .resme {
-  position: absolute;
-  top: 45vh;
 }
 
 .home .title .resme:hover span {
@@ -187,8 +182,9 @@ marquee {
 /* **************************************   About   ********************************** */
 .aboutme {
   background-color: #101010;
-  height: 100%;
-  width: 100%;
+  height: 95%;
+  width: 95%;
+  margin: 2.5%;
 }
 
 .aboutme .content-abtme .heading {
@@ -209,6 +205,7 @@ marquee {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 300;
+  text-align: justify;
 }
 
 .aboutme .content-abtme .HireMebtn {
@@ -266,6 +263,12 @@ marquee {
 
 /* **************************************   Skills   ********************************** */
 
+.skills {
+  height: 95%;
+  width: 95%;
+  margin: 2.5%;
+  background: url(Assets/Home/skillsbg.png);
+}
 
 .skills .cntnr-skill {
   margin: 50px;
@@ -285,6 +288,7 @@ marquee {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 300;
+  text-align: justify;
 }
 
 .skills .content-skill .cntnr-skill {
@@ -331,10 +335,6 @@ marquee {
   transition-property: width, background-color;
 }
 
-.skills {
-  display: inline;
-}
-
 .skills .skill-cnct {
   float: left;
 }
@@ -342,6 +342,7 @@ marquee {
 .fig .progress-moved .progress-bar2 {
   background-color: #C7441E;
   animation: progress 2s infinite;
+  animation-iteration-count: 1
 }
 
 @keyframes progress {
