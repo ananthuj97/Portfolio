@@ -182,9 +182,9 @@ marquee {
 /* **************************************   About   ********************************** */
 .aboutme {
   background-color: #101010;
-  height: 95%;
-  width: 95%;
-  margin: 2.5%;
+  height: 90%;
+  width: 90%;
+  margin: 5%;
 }
 
 .aboutme .content-abtme .heading {
@@ -264,9 +264,9 @@ marquee {
 /* **************************************   Skills   ********************************** */
 
 .skills {
-  height: 95%;
-  width: 95%;
-  margin: 2.5%;
+  height: 90%;
+  width: 90%;
+  margin: 5%;
   background: url(Assets/Home/skillsbg.png);
 }
 
@@ -786,8 +786,9 @@ marquee {
 
 /* **************************************   Portfolio   ********************************** */
 .portfolio {
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
+  margin: 5%;
   background-color: #101010;
 }
 
@@ -796,14 +797,13 @@ marquee {
   color: #eee;
   font-size: 50px;
   font-weight: 400;
-  padding-top: 100px;
-  margin-left: 100px;
 }
 
 .portfolio .PG {
   position: relative;
   text-align: center;
   color: white;
+  padding: 4%;
 }
 
 .portfolio .pgtxt {
@@ -825,6 +825,7 @@ marquee {
   position: relative;
   text-align: center;
   color: white;
+  padding: 4%;
 }
 
 .portfolio .uxtxt {
@@ -846,6 +847,7 @@ marquee {
   position: relative;
   text-align: center;
   color: white;
+  padding: 4%;
 }
 
 .portfolio .mgtxt {
@@ -867,6 +869,7 @@ marquee {
   position: relative;
   text-align: center;
   color: white;
+  padding: 4%;
 }
 
 .portfolio .vetxt {
