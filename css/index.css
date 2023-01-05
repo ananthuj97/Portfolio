@@ -186,7 +186,7 @@ marquee {
 /* **************************************   About   ********************************** */
 .aboutme {
   background-color: #101010;
-  height: 90%;
+  height: 100%;
   width: 90%;
   margin: 5%;
 }
@@ -199,9 +199,12 @@ marquee {
 }
 
 .aboutme .content-abtme .abtme img {
-  float: right;
   width: 400px;
   margin-left: 15px;
+}
+.aboutme .content-abtme .abtme .abtme-text {
+  margin-right: 50px;
+  line-height: 30px;
 }
 
 .aboutme .content-abtme .abtme {
@@ -210,14 +213,15 @@ marquee {
   font-size: 24px;
   font-weight: 300;
   text-align: justify;
+  display: flex;
 }
 
 .aboutme .content-abtme .HireMebtn {
   width: fit-content;
   font-family: 'Poppins', sans-serif;
   background-color: #EE7D56;
-  padding: 16px;
-  margin: 10px;
+  padding: 8px 16px;
+  margin: 30px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -230,7 +234,7 @@ marquee {
 }
 
 .aboutme .content-abtme .HireMebtn:hover {
-  width: 260px;
+  width: fit-content;
   background-color: black;
   color: white;
   border: 2px solid white;
@@ -238,10 +242,10 @@ marquee {
 
 .aboutme .content-abtme .Contactbtn {
   width: fit-content;
-  margin: 10px;
+  margin: 30px 10px;
   font-family: 'Poppins', sans-serif;
   background-color: black;
-  padding: 16px;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -255,7 +259,7 @@ marquee {
 
 .aboutme .content-abtme .Contactbtn:hover {
   content: Get Quote;
-  width: 260px;
+  width: fit-content;
   background-color: white;
   color: black;
 }
@@ -271,11 +275,11 @@ marquee {
   height: 90%;
   width: 90%;
   margin: 5%;
-  background: url(Assets/Home/skillsbg.png);
+  background-image: url(../Assets/Home/skillsbg.png);
 }
 
 .skills .cntnr-skill {
-  margin: 50px;
+  margin: 0px 50px;
   display: inline-block;
 }
 
@@ -287,16 +291,22 @@ marquee {
 
 }
 
+.skills .content-skill .skill-div {
+  display: flex;
+}
+
 .skills .content-skill .skill-cnct {
   color: #eee;
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 300;
   text-align: justify;
+  width: 45%;
 }
 
 .skills .content-skill .cntnr-skill {
   display: inline;
+  width: 55%;
 }
 
 .skills .content-skill .cntnr-skill .skillset {
@@ -322,7 +332,7 @@ marquee {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 70%;
+  width: 100%;
   text-align: center;
   position: relative;
 }
@@ -394,7 +404,7 @@ marquee {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 70%;
+  width: 100%;
   text-align: center;
   position: relative;
 }
@@ -461,7 +471,7 @@ marquee {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 70%;
+  width: 100%;
   text-align: center;
   position: relative;
 }
@@ -528,7 +538,7 @@ marquee {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 70%;
+  width: 100%;
   text-align: center;
   position: relative;
 }
@@ -595,7 +605,7 @@ marquee {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 70%;
+  width: 100%;
   text-align: center;
   position: relative;
 }
@@ -662,7 +672,7 @@ marquee {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 70%;
+  width: 100%;
   text-align: center;
   position: relative;
 }
@@ -729,7 +739,7 @@ marquee {
   font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 300;
-  width: 70%;
+  width: 100%;
   text-align: center;
   position: relative;
 }
@@ -801,6 +811,11 @@ marquee {
   color: #eee;
   font-size: 50px;
   font-weight: 400;
+}
+
+.portfolio .hoz {
+      display: flex;
+    justify-content: space-between;
 }
 
 .portfolio .PG {
@@ -891,11 +906,11 @@ marquee {
 }
 
 .portfolio .explore {
-  width: 200px;
+  width: fit-content;
   margin: 20px 20px;
   font-family: 'Poppins', sans-serif;
   background-color: #181818;
-  padding: 16px;
+  padding: 0px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -914,8 +929,8 @@ marquee {
 
 .portfolio p {
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 30;
+  font-size: 9px;
 }
 
 .portfolio .uxtxt .titl {
@@ -950,10 +965,14 @@ marquee {
   color: white;
 }
 
+.myjourney .row1 {
+  display: flex;
+}
+
 .myjourney .mg .date {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 38%;
+  left: 44%;
   transform: translate(-50%, -50%);
 }
 
@@ -971,17 +990,17 @@ marquee {
 
 .myjourney .mg-des {
   position: relative;
-  text-align: center;
   color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  background-image: url(../Assets/Home/MG\ De.png);
 }
 
 .myjourney .mg-des .des {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .myjourney .mg-des .des .job {
