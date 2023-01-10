@@ -58,8 +58,14 @@
       <div class="title-text">
         <h3>Hi, My name is</h3>
         <h1>Ananthu Jayakumar</h1>
-        <div class="skillsanima">
-          <h2>I am a</h2>
+        <div class="flx">
+        <div class="anima">
+          <span class="text first-text">I'm a</span>
+          <span class="text sec-text">UI | UX Designer</span>
+      </div>
+    </div>
+        <!-- <div class="skillsanima">          
+         <h2>I am a</h2>
           <marquee behavior="scroll" direction="up" scrollamount="3" scrolldelay="50">
             <ul class="skillul">
               <li class="skillli">UI | UX Designer</li>
@@ -68,11 +74,32 @@
               <li class="skillli">Video Editor </li>
             </ul>
           </marquee>
-        </div>
+        </div> -->
         <button class="resme"><span> My Resume </span> </button><br>
       </div>
     </div>
   </section>
+  <script>
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent = "UI | UX Designer";
+        }, 0);
+        setTimeout(() => {
+            text.textContent = "Photographer";
+        }, 4000);
+        setTimeout(() => {
+            text.textContent = "Motion Graphic Designer";
+        }, 8000); //1s = 1000 milliseconds
+        setTimeout(() => {
+            text.textContent = "Video Editor";
+        }, 12000); //1s = 1000 milliseconds
+    }
+
+    textLoad();
+    setInterval(textLoad, 12000);
+</script>
   <!-- **************************************   About   ********************************** -->
   <section class="aboutme" id="ABOUTME">
     <span class="content-abtme">

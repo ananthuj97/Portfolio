@@ -176,12 +176,54 @@ body {
   color: white;
 }
 
-marquee {
+/* marquee {
   display: inline-block;
   animation: marquee 5s linear infinite;
   animation-play-state: running;
   height: 50px;
+} */
+
+.home .title .title-text .flx{
+  display: flex;
+  background: #000000;
+  overflow: hidden;
 }
+.home .title .title-text .anima{
+  font-family: 'Poppins', sans-serif;
+  
+  width: 700px;
+  overflow: hidden;
+}
+.home .title .anima .text{
+  position: relative;
+  color: #EE7D56;
+  font-size: 4vh;
+  font-weight: 300;
+}
+.home .title .anima .text.first-text{
+  color: #FFF;
+}
+.home .title .text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  border-left: 2px solid #EE7D56;
+  animation: animate 4s steps(16) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
+}
+
+
 
 /* **************************************   About   ********************************** */
 .aboutme {
