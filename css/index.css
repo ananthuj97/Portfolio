@@ -241,15 +241,10 @@ display: none;
   }
 
 @media screen and (max-width: 800px){
-  .home{
-    text-align: center;
-  }
   .title img {
   opacity: 10%;
-  align-items: center;
   }
   .title .title-text .text1{
-    text-align: center;
     width: 50%;
     height: 50%;
   }
