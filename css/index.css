@@ -5,9 +5,8 @@ html
 body {
   background-color: black;
   margin: 0%;
-  height: 95%;
-  max-width: 95%;
-  margin: 0 2.5% 0 2.5%;
+  height: 100%;
+  max-width: 100%;
 }
 
 /* **************************************   NAV   ********************************** */
@@ -21,8 +20,7 @@ body {
 }
 
 .Navig .navul {
-  padding: 30px;
-  margin-right: 20px;
+  padding: 1vh;
   display: inline-block;
   font-family: 'Poppins', sans-serif;
 }
@@ -31,18 +29,23 @@ body {
   float: right;
 }
 
-.navigation a {
+.navigation .Navig .navul a:visited {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navigation .Navig .navul .navli:visited {
   list-style: none;
   text-decoration: none;
 }
 
 .navli {
   color: #eee;
-  font-size: 20px;
+  font-size: 1.75vh;
   list-style: none;
   text-decoration: none;
   display: inline;
-  padding: 30px;
+  padding: 2vh;
   cursor: pointer;
 }
 
@@ -54,7 +57,13 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px)
+{
+  .Navigation .Navig .navul{
+    display: none;
+  }
+}
+/* @media screen and (max-width: 600px) {
   .Navig a:not(:first-child) {display: none;}
   .Navig a.icon {
     float: right;
@@ -74,11 +83,12 @@ body {
     display: block;
     text-align: left;
   }
-}
+} */
 
 
 /* **************************************   Home   ********************************** */
 .home {
+  background-color: #000000;
   height: 100%;
   width: 100%;
 }
@@ -93,9 +103,15 @@ body {
 .title img {
   height: 95vh;
   max-width: 95vw;
-  margin: -15vh 0 0 2vw;
-}
+  /* margin: -15vh 0 0 2vw; */
+  transition-duration: 0.4s;
 
+}
+@media screen and (max-width: 600px){
+.title img {
+display: none;
+}
+}
 .title .title-text {
   position: absolute;
   top: 20vh;
@@ -104,31 +120,30 @@ body {
 
 .title h1 {
   font-weight: 600;
-  /* width: 30vw; */
   margin: 0px;
   font-size: 6vh;
 }
 
 .title h2 {
   font-weight: 300;
-  font-size: 50PX;
+  font-size: 5vh;
   margin: 0px;
   width: 15vw;
 }
 
 .title h3 {
   font-weight: 300;
-  font-size: 15PX;
+  font-size: 3vh;
   margin: 0px;
 }
 
-.title .skillsanima {
+/* .title .skillsanima {
   display: flex;
   width: 60vw;
 }
 
 .title .skillsanima .skillul {
-  padding: 0px;
+  padding: 0%;
 }
 
 .title .skillsanima .skillul .skillli {
@@ -137,13 +152,14 @@ body {
   list-style: none;
   display: flex;
 
-}
+} */
 
 .home .title .resme {
   min-width: fit-content;
   font-family: 'Poppins', sans-serif;
   background-color: black;
-  padding: 5px 15px;
+  width: 26vh;
+  height: 7vh;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -152,6 +168,7 @@ body {
   color: white;
   border: 2px solid white;
   border-radius: 50px;
+  transition-duration: 0.4s;
 }
 
 .material-symbols-outlined {
@@ -171,21 +188,15 @@ body {
 }
 
 .home .title .resme:hover {
-  width: 260px;
-  background-color: orange;
+  width: 26vh;
+  background-color: #e57049;
   color: white;
 }
 
-/* marquee {
-  display: inline-block;
-  animation: marquee 5s linear infinite;
-  animation-play-state: running;
-  height: 50px;
-} */
 
 .home .title .title-text .flx{
   display: flex;
-  background: #000000;
+  background: none;
   overflow: hidden;
 }
 .home .title .title-text .anima{
@@ -223,7 +234,41 @@ body {
   }
 }
 
+@media screen and (max-width: 1000px){
+  .title img {
+    opacity: 20%;
+  }
+  }
 
+@media screen and (max-width: 800px){
+  .home{
+    text-align: center;
+  }
+  .title img {
+  opacity: 10%;
+  align-items: center;
+  }
+  .title .title-text .text1{
+    text-align: center;
+    width: 50%;
+    height: 50%;
+  }
+  }
+
+@media screen and (max-width: 600px){
+  .home{
+    text-align: center;
+  }
+  .title img {
+  opacity: 10%;
+  align-items: center;
+  }
+  .title .title-text .text1{
+    text-align: center;
+    width: 50%;
+    height: 50%;
+  }
+  }
 
 /* **************************************   About   ********************************** */
 .aboutme {
